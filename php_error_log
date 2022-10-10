@@ -1,0 +1,56 @@
+[11-Oct-2022 00:36:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant Connection::infoDatabase in C:\xampp\htdocs\apirest-dinamica\models\connection.php:23
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#1 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 23
+[11-Oct-2022 00:37:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::conect() in C:\xampp\htdocs\apirest-dinamica\index.php:13
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\index.php on line 13
+[11-Oct-2022 00:39:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant Connection::infoDatabase in C:\xampp\htdocs\apirest-dinamica\models\connection.php:23
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#1 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 23
+[11-Oct-2022 00:47:13 Europe/Berlin] PHP Warning:  Uncaught PDOException: PDO::__construct(): Error while reading greeting packet. PID=35684 in C:\xampp\htdocs\apirest-dinamica\models\connection.php:24
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\connection.php(24): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in C:\xampp\htdocs\apirest-dinamica\models\connection.php:24
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\connection.php(24): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#2 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 24
+[11-Oct-2022 00:47:13 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 29
+[11-Oct-2022 00:48:16 Europe/Berlin] PHP Warning:  Uncaught PDOException: PDO::__construct(): Error while reading greeting packet. PID=35684 in C:\xampp\htdocs\apirest-dinamica\models\connection.php:24
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\connection.php(24): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in C:\xampp\htdocs\apirest-dinamica\models\connection.php:24
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\connection.php(24): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\apirest-dinamica\index.php(13): Connection::connect()
+#2 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 24
+[11-Oct-2022 00:48:16 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\apirest-dinamica\models\connection.php on line 29
+[11-Oct-2022 01:33:17 Europe/Berlin] PHP Warning:  require_once(controllers/get.route_controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 3
+[11-Oct-2022 01:33:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/get.route_controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php:3
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 3
+[11-Oct-2022 01:33:47 Europe/Berlin] PHP Warning:  require_once(controllers/get.route_controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 3
+[11-Oct-2022 01:33:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/get.route_controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php:3
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 3
