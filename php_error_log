@@ -54,3 +54,77 @@ Stack trace:
 #2 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
 #3 {main}
   thrown in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 3
+[11-Oct-2022 19:31:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "=", expecting ";" in C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php on line 11
+[11-Oct-2022 19:58:30 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 9
+[11-Oct-2022 19:58:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-2.array' doesn't exist in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(9): GetModel::getData(Array, 'id_product,name...')
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(9): GetController::getData(Array, 'id_product,name...')
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 13
+[11-Oct-2022 19:58:46 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 9
+[11-Oct-2022 19:58:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-2.array' doesn't exist in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(9): GetModel::getData(Array, 'id_product,name...')
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(9): GetController::getData(Array, 'id_product,name...')
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 13
+[11-Oct-2022 19:59:06 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 9
+[11-Oct-2022 19:59:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-2.array' doesn't exist in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(9): GetModel::getData(Array, '*')
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(9): GetController::getData(Array, '*')
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 13
+[11-Oct-2022 19:59:09 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 9
+[11-Oct-2022 19:59:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-2.array' doesn't exist in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(9): GetModel::getData(Array, '*')
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(9): GetController::getData(Array, '*')
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 13
+[11-Oct-2022 22:02:20 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 9
+[11-Oct-2022 22:02:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-2.array' doesn't exist in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:13
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(13): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(9): GetModel::getData(Array, '*')
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(9): GetController::getData(Array, '*')
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 13
+[11-Oct-2022 22:06:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "table" in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php:6
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 6
+[11-Oct-2022 22:06:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "table" in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php:6
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\routes\services\get.php on line 6
+[12-Oct-2022 01:19:15 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ":", expecting ")" in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 27
+[12-Oct-2022 01:25:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ":", expecting ")" in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 27
+[12-Oct-2022 01:25:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ":", expecting ")" in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 27
+[12-Oct-2022 01:26:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ":", expecting ")" in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 27
