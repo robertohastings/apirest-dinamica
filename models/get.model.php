@@ -197,4 +197,57 @@ class GetModel{
 
 	}
 
+	/*Peticiones Get para el buscador sin relaciones*/
+	static public function getRelDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+
+		$linkToArray = explode(",", $linkTo); 
+		$searchArray = explode("_", $search);
+
+		$linkText = "";
+
+		if(count($linkToArray)>1){
+			foreach ($linkToArray as $key => $value) {
+				if($key > 0){
+					$linkText .= "AND ".$value." = :".$value." ";
+				}
+			}
+		}
+
+		/*Sin ordenar y sin limitar datos*/
+		$sql = "SELECT $select FROM $table WHERE $linkToArray[0] LIKE '%$searchArray[0]%' $linkText";
+
+		
+		/*Ordenar datos sin limites*/
+		if($orderBy != null && $orderMode != null && $startAt == null && $endAt == null){
+			$sql = "SELECT $select FROM $table WHERE $linkToArray[0] LIKE '%$searchArray[0]%' $linkText ORDER BY $orderBy $orderMode";
+		}
+
+		/*Ordenar datos con limites*/
+		if($orderBy != null && $orderMode != null && $startAt != null && $endAt != null){
+			$sql = "SELECT $select FROM $table WHERE $linkToArray[0] LIKE '%$searchArray[0]%' $linkText ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
+		}	
+
+		/*Sin ordenar y con limitar datos*/
+		if($orderBy == null && $orderMode == null && $startAt != null && $endAt != null){
+			$sql = "SELECT $select FROM $table WHERE $linkToArray[0] LIKE '%$searchArray[0]%' $linkText LIMIT $startAt, $endAt";
+			
+		}	
+
+/*		echo '<pre>'; print_r($sql); echo '</pre>';
+		return;	*/	
+
+		$stmt = Connection::connect()->prepare($sql);
+
+		foreach ($linkToArray as $key => $value) {
+			if($key > 0){
+				$stmt -> bindParam(":".$value, $searchArray[$key], PDO::PARAM_STR);
+			}
+		}	
+
+		$stmt -> execute();
+
+		return $stmt -> fetchALL(PDO::FETCH_CLASS);
+		
+	}
+
 }

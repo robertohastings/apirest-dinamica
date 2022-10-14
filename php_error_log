@@ -8,3 +8,55 @@ Stack trace:
 #5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 191
+[14-Oct-2022 17:21:06 Europe/Berlin] PHP Warning:  Undefined variable $equalTo in C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php on line 52
+[14-Oct-2022 17:21:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '%%'' at line 1 in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:224
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(224): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(52): GetModel::getRelDataSearch('products', '*', 'name_product', NULL, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(47): GetController::getRelDataSearch('products', '*', 'name_product', 'Samsung', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 224
+[14-Oct-2022 17:23:50 Europe/Berlin] PHP Warning:  Undefined variable $equalTo in C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php on line 52
+[14-Oct-2022 17:23:50 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '%%'' at line 1 in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:224
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(224): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(52): GetModel::getRelDataSearch('products', '*', 'name_product', NULL, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(47): GetController::getRelDataSearch('products', '*', 'name_product', 'Samsung', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 224
+[14-Oct-2022 17:27:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '%Samsung%'' at line 1 in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:224
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(224): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(52): GetModel::getRelDataSearch('products', '*', 'name_product', 'Samsung', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(47): GetController::getRelDataSearch('products', '*', 'name_product', 'Samsung', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 224
+[14-Oct-2022 23:22:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'n' in 'where clause' in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:247
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(247): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(52): GetModel::getRelDataSearch('products', '*', 'name_product,ca...', 'Sound_3', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(47): GetController::getRelDataSearch('products', '*', 'name_product,ca...', 'Sound_3', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 247
+[14-Oct-2022 23:27:26 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_product' in 'where clause' in C:\xampp\htdocs\apirest-dinamica\models\get.model.php:247
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinamica\models\get.model.php(247): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinamica\controllers\get.controller.php(52): GetModel::getRelDataSearch('products', '*', 'name_product,ca...', 'Sound_3', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest-dinamica\routes\services\get.php(47): GetController::getRelDataSearch('products', '*', 'name_product,ca...', 'Sound_3', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest-dinamica\routes\routes.php(25): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinamica\controllers\route_controller.php(8): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinamica\index.php(24): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinamica\models\get.model.php on line 247

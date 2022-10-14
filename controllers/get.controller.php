@@ -46,6 +46,18 @@ class GetController{
 
 	}	
 
+	/*Peticiones Get para el buscador sin relaciones*/
+	static public function getRelDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt){
+
+		$response = GetModel::getRelDataSearch($table, $select, $linkTo, $search, $orderBy, $orderMode, $startAt, $endAt);
+/*		echo '<pre>'; print_r($response); echo '</pre>';
+		return;*/
+
+		$return = new GetController();
+		$return -> fnResponse($response);
+
+	}
+
 
 	/*Respuestas del Controlador*/
 	public function fnResponse($response){
